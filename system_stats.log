@@ -188,3 +188,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7293.3 avail Mem
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
       6 root      20   0    3088   1916   1792 S   0.0   0.0   0:00.00 init
 
+=== 2025-08-08 12:40:01 ===
+ls
+chmod +x shiftlines.sh
+chmod +x shiflines.sh
+shiflines.sh
+./shiflines.sh
+ls
+rm shilines.sh
+rm shiflines.sh
+ls
+rm input.txt
+ls
+cd shilines
+cd shiflines
+ls
+cat a.out
+clear
+ls
+cat input.cpp
+rm a.out
+rm input.cpp
+cd ..
+ls
+rm shiflines
+rmdir shiflines
+ls
+mkdir shiftlines
+cd shiftlines/
+clera
+clear
+touch input.txt
+ls
+nano input.txt
+cat input.txt
+clear
+ls
+nano shift_lines.sh
+ls
+./shift_lines.sh input.txt 2
+chmod +x shift_lines.sh
+./shift_lines.sh input.txt 2
+cat input.txt
+cat shiftlines.sh
+nano shiftlines.sh
+ls
+nano shift_lines.sh
+ls
+touch temp.txt
+vim temp.txt
+ls
+cat temp.txt
+--- CPU & RAM ---
+top - 12:40:01 up 41 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  43 total,   1 running,  42 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7193.7 free,    371.9 used,    246.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7288.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170136  10876   8188 S   0.0   0.1   0:00.52 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3088   1916   1792 S   0.0   0.0   0:00.00 init
+
