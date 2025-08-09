@@ -314,3 +314,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7288.8 avail Mem
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
       6 root      20   0    3088   1792   1792 S   0.0   0.0   0:00.00 init
 
+=== 2025-08-09 14:00:01 ===
+git config --global user.email "arun.kumar@bizacuity.com"
+git add system_stats.log
+git commit -m "Initial log file"
+git push origin main
+git branch -M main
+git push -u origin main
+collect.sh
+./collect.sh
+date
+echo "=== $NOW ==="
+tail -n 5 ~./bach_history
+tail -n 5 history
+history
+tail -n 5 history
+tail -n 5 ~/.bash_history
+cd ~
+ls -a
+cd .bash_history
+ls
+ls -a
+cd .cache
+ls
+cd ..
+cd .bash_history
+cat .back_history
+cat .bash_history
+clear
+cd /home/arunk/linux_questions/system_monitoring_github/history-of-commands
+ls
+cd system_stats.log
+cat system_stats.log
+cat collect.sh
+git branch
+crontab -e
+crontab -l
+cat /home/arunk/cron_log.txt
+cd ..
+ls
+cd ..
+ls
+cd shiftlines/
+ls
+cat shilft_lines.sh
+cat shift_lines.sh
+crontab -e
+cd ~
+logout
+clear
+ls
+logout
+--- CPU & RAM ---
+top - 14:00:01 up  2:26,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  43 total,   1 running,  42 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.0 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7229.7 free,    371.6 used,    210.9 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7288.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1283 arunk     20   0   10904   3712   3200 R   6.2   0.0   0:00.01 top
+      1 root      20   0  170068  10832   8016 S   0.0   0.1   0:00.65 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+
