@@ -214,3 +214,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7278.4 avail Mem
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-systemd(Ub
       6 root      20   0    3252   1896   1792 S   0.0   0.0   0:00.02 init
 
+=== 2025-08-11 23:59:01 ===
+*/1 * * * * /bin/bash /home/arunk/linux_questions/system_monitoring_github/history-of-commands/collect.sh >> /home/arunk/cron.log 2>&1
+./collect.sh
+vi collect.sh
+vi collect2.sh
+bash /home/arunk/linux_questions/system_monitoring_github/history-of-commands/collect2.sh
+vi collect2.sh
+bash /home/arunk/linux_questions/system_monitoring_github/history-of-commands/collect2.sh
+crontab -a
+crontab -e
+cat collect2.sh
+cd ~
+ls -a
+pwd
+sudo ~/.bash_history
+~/.bash_history
+file ~./bash_history
+file ~/bash_history
+file ~/.bash_history
+cat ~/.bash_history
+history
+history | tail -n 10
+stat ~/.bash_history
+cat collect.sh
+ls
+cd linux_questions/
+ls
+cd system_monitoring_github/
+ls 
+cd history-of-commands/
+ls
+vi collect2.sh
+./collect2.sh
+sudo ./collect2.sh
+./collect2.sh
+clear
+./collect2.sh
+vi collect2.sh
+chmod +x collect2.sh
+./collect2.sh
+cat collect2.sh
+exit
+ls
+cd linux_questions/
+ls
+cd system_monitoring_github/
+ls
+cd history-of-commands/
+./collect2.sh
+vi collect2.sh
+exit
+--- CPU & RAM ---
+top - 23:59:04 up  6:12,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  44 total,   1 running,  43 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.8 si,  0.0 st
+MiB Mem :   7812.2 total,   7219.8 free,    380.1 used,    212.3 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7278.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170072  10856   8296 S   0.0   0.1   0:01.94 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-sy+
+      6 root      20   0    3104   1896   1792 S   0.0   0.0   0:00.02 init
+
