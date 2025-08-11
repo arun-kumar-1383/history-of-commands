@@ -1448,3 +1448,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7279.0 avail Mem
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
       6 root      20   0    3088   1912   1792 S   0.0   0.0   0:00.00 init
 
+=== 2025-08-11 16:55:01 ===
+ls
+java -version
+java --version
+java -version
+ls
+cd linux_questions/
+ls
+mkdir commands_test
+cd commands_test/
+rmdir commands_test
+clear
+mkdir mydir
+ls
+cd mydir
+touch file1.txt
+ls
+rm file1.txt
+ls
+cd ..
+rm mydir
+rmdir mydir
+touch myfile.txt
+chmod 777 myfile.txt
+ls
+rm myfile
+rm myfile.txt
+ls
+history
+history tail -n 10
+tail -n 10 history
+history | tail -n 10
+ls
+touch myfile.txt
+scp myfile.txt user@remotehost:/home/user/
+scp myfile.txt /
+sudo scp myfile.txt
+sudo scp myfile.txt /
+ls
+clear
+ls
+vi test.txt
+echo -e "red\nblue\ngreen" > myfile.txt
+cat myfile.txt
+free -g
+free -h
+du -h --max-depth=1
+df -ah
+top
+uname -a
+hostname
+--- CPU & RAM ---
+top - 16:55:01 up  2:04,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  47 total,   1 running,  46 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7247.1 free,    379.1 used,    186.1 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7280.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170072  10856   8296 S   0.0   0.1   0:00.87 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3088   1912   1792 S   0.0   0.0   0:00.00 init
+
