@@ -2393,3 +2393,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7278.7 avail Mem
       1 root      20   0  170072  10856   8296 S   0.0   0.1   0:01.90 systemd
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-sy+
 
+=== 2025-08-11 22:59:39 ===
+ls
+vi test.txt
+echo -e "red\nblue\ngreen" > myfile.txt
+cat myfile.txt
+free -g
+free -h
+du -h --max-depth=1
+df -ah
+top
+uname -a
+hostname
+ssh -i "arun1_aws.pem" ec2-user@ec2-13-61-141-229.eu-north-1.compute.amazonaws.com
+ssh -i arun1_aws.pem ec2-user@13-61-141-229
+ls -a
+cd .ssh
+ls
+ssh -i arun1_aws.pem ec2-user@13-61-141-229
+ssh -i "arun1_aws.pem" ec2-user@ec2-13-61-141-229.eu-north-1.compute.amazonaws.com
+ssh ec2-user@13.61.141.229
+java --version
+ssh ec2-user@16.171.242.15
+ssh ec2-user@13.60.67.146
+sudo yum locainstall  oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+wget yum
+sudo dnf localinstall oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+sudo dnf install -y yum
+sudo apt install ./oracle-database-xe-21c-1.0-1.ol8.x86_64.rpm
+ssh ec2-user@13.60.220.45
+ls
+cd ..
+ls
+cd arunk
+ls -a
+cd .ssh
+ls
+cat id_rsa.pub
+cd ~
+yum list installed
+wget yum
+sudo dnf install wget
+sudo yum install wget
+sudo dnf install wget -y
+sudo dnf install yum
+cat /etc/os-release
+sudo apt update
+sudo apt install yum
+yum --version
+ssh ec2-user@13.53.37.117
+ssh ec2-user@13.53.37.117 -y
+ssh ec2-user@13.53.37.117 -y
+--- CPU & RAM ---
+top - 22:59:39 up  5:12,  1 user,  load average: 0.01, 0.01, 0.00
+Tasks:  41 total,   1 running,  40 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7230.3 free,    380.4 used,    201.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7279.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170072  10856   8296 S   0.0   0.1   0:01.90 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-systemd(Ub
+      6 root      20   0    3088   1892   1792 S   0.0   0.0   0:00.01 init
+
