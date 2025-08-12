@@ -718,3 +718,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7288.6 avail Mem
       2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.00 init-sy+
       6 root      20   0    3088   2028   1792 S   0.0   0.0   0:00.00 init
 
+=== 2025-08-12 16:59:01 ===
+cd ~
+ls -a
+pwd
+sudo ~/.bash_history
+~/.bash_history
+file ~./bash_history
+file ~/bash_history
+file ~/.bash_history
+cat ~/.bash_history
+history
+history | tail -n 10
+stat ~/.bash_history
+cat collect.sh
+ls
+cd linux_questions/
+ls
+cd system_monitoring_github/
+ls 
+cd history-of-commands/
+ls
+vi collect2.sh
+./collect2.sh
+sudo ./collect2.sh
+./collect2.sh
+clear
+./collect2.sh
+vi collect2.sh
+chmod +x collect2.sh
+./collect2.sh
+cat collect2.sh
+exit
+ls
+cd linux_questions/
+ls
+cd system_monitoring_github/
+ls
+cd history-of-commands/
+./collect2.sh
+vi collect2.sh
+exit
+cd /linux_questions/system_monitoring_github/history-of-commands
+cd ~/linux_questions/system_monitoring_github/history-of-commands
+./collect2.sh
+crontab -a
+crontab -e
+cd ..
+mkdir vi_assign
+ls vi_assign/
+vi data.txt
+exit
+--- CPU & RAM ---
+top - 16:59:04 up  2:42,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  44 total,   1 running,  43 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7192.0 free,    375.0 used,    245.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7285.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170136  10876   8188 S   0.0   0.1   0:00.62 systemd
+      2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3088   2028   1792 S   0.0   0.0   0:00.00 init
+
