@@ -1096,3 +1096,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7238.7 avail Mem
       2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.00 init-sy+
       6 root      20   0    3808   2540   1792 S   0.0   0.0   0:03.95 init
 
+=== 2025-08-13 13:59:01 ===
+cd history-of-commands/
+ls
+vi collect2.sh
+./collect2.sh
+sudo ./collect2.sh
+./collect2.sh
+clear
+./collect2.sh
+vi collect2.sh
+chmod +x collect2.sh
+./collect2.sh
+cat collect2.sh
+exit
+ls
+cd linux_questions/
+ls
+cd system_monitoring_github/
+ls
+cd history-of-commands/
+./collect2.sh
+vi collect2.sh
+exit
+cd /linux_questions/system_monitoring_github/history-of-commands
+cd ~/linux_questions/system_monitoring_github/history-of-commands
+./collect2.sh
+crontab -a
+crontab -e
+cd ..
+mkdir vi_assign
+ls vi_assign/
+vi data.txt
+exit
+ls
+cd linux_questions/
+ls
+cd vi_assign/
+ls
+touch data.txt
+vi data.txt 
+cat data.txt 
+sed -E 's/,Bronze,/,100 points,/g; s/,Silver,/,200 points,/g; s/,Gold,/,500 points,/g' data.csv > step1.csv
+sed -E 's/,Bronze,/,100 points,/g; s/,Silver,/,200 points,/g; s/,Gold,/,500 points,/g' data.txt > step1.csv
+ls
+cat step1.csv
+rm step1.csv
+ls
+vi data.txt
+cd ~
+ec2-user@51.20.192.158
+ssh ec2-user@51.20.192.158
+--- CPU & RAM ---
+top - 13:59:04 up  5:05,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  48 total,   1 running,  47 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7182.3 free,    401.5 used,    228.4 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7236.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  171332  12156   8188 S   0.0   0.2   0:02.55 systemd
+      2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3940   2504   1792 S   0.0   0.0   0:07.13 init
+
