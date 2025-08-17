@@ -2671,3 +2671,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7215.4 avail Mem
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
       6 root      20   0    3948   2356   1792 S   0.0   0.0   0:17.41 init
 
+=== 2025-08-17 12:00:01 ===
+ls
+cd terraform/
+touch variables.tf outputs.tf
+cd ..
+wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+sudo apt-get install python3-pip
+sudo pip install awscli
+aws --version
+terraform --version
+cd first/
+cd devops-kt-repo/
+aws --version
+terraform --version
+ls
+cd terraform/
+aws --version
+terraform --version
+terraform init
+terraform fmt
+terraform validate
+terraform fmt
+terraform validate
+terraform fmt
+terraform validate
+terraform fmt
+terraform validate
+terraform fmt
+terraform validate
+terraform fmt
+terraform validate
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+terraform fmt
+terraform validate
+terraform plan
+terraform apply
+terraform init -upgrade
+terraform plan
+terraform apply
+terraform init -upgrade
+terraform plan
+terraform apply
+terraform init -upgrade
+terraform apply
+cd ~
+ssh ec2-user@16.171.233.163
+--- CPU & RAM ---
+top - 12:00:04 up  7:27,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  45 total,   1 running,  44 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7159.0 free,    427.6 used,    225.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7213.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170084  10844   8028 S   0.0   0.1   0:01.59 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3948   2356   1792 S   0.0   0.0   0:17.48 init
+
