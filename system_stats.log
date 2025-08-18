@@ -2923,3 +2923,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7042.1 avail Mem
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
       6 root      20   0    3088   1920   1792 S   0.0   0.0   0:00.00 init
 
+=== 2025-08-18 12:59:01 ===
+git commit -m "first commit"
+git push origin arun
+code .
+git add .gitignore
+git commit -m "Remove .terraform directory and add to .gitignore"
+git push origin arun
+git rm -r --cached .terraform
+git commit -m "Remove .terraform directory from repository"
+git push origin arun 
+git status
+git add .
+git status
+git commit -m "added .gitignore"
+git push
+pip install git-filter-repo
+git filter-repo --path terraform/.terraform --invert-paths
+pip install git-filter-repo
+git filter-repo --path terraform/.terraform --invert-paths
+git filter-branch --force --index-filter "git rm -rf --cached --ignore-unmatch terraform/.terraform" \
+git filter-repo --path terraform/.terraform --invert-paths
+git filter-branch --force --index-filter "git rm -rf --cached --ignore-unmatch terraform/.terraform" --prune-empty --tag-name-filter cat -- --all
+git checkout arun
+git reset --hard origin/develop
+git push origin arun --force
+git status
+git reflog
+git checkout 88f63f0
+git checkout arn
+git checkout arun
+git checkout 88f63f0
+git status
+git checkout -b temp-branch
+git checkout arun
+git merge temp-branch
+ls
+git status
+git add .
+git checkout arun
+git commit -m "comment"
+git push origin arun
+git rm -r --cached .terraform
+ls -a
+echo ".terraform/" >> .gitignore
+git add .gitignore
+git commit -m "Ignore .terraform directory"
+git rm -r --cached .terraform
+git status
+git push origin arun
+git checkout main
+git checkout arun
+--- CPU & RAM ---
+top - 12:59:04 up  1:00,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  43 total,   1 running,  42 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7237.5 free,    381.9 used,    192.9 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7279.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170156  10480   8048 S   0.0   0.1   0:00.60 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3088   1920   1792 S   0.0   0.0   0:00.00 init
+
