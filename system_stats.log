@@ -4498,3 +4498,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7257.3 avail Mem
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
       6 root      20   0    3088   1916   1792 S   0.0   0.0   0:00.00 init
 
+=== 2025-08-20 18:00:01 ===
+cat data.txt
+vi data.txt
+awk -F, 'BEGIN{OFS=","} NR==1{print; next} {$6=$6*1.1; print}' data.txt
+cat data.txt
+awk -F, 'BEGIN{OFS=","} NR==1{print; next} {$6=$6*1.1; print}' data.txt > updated.txt
+mv update.txt data.txt
+mv updated.txt data.txt
+cat data.txt
+ls
+awk -F, 'BEGIN{OFS=","} NR==1{print; next} {$6=int($6*1.1+0.5); print}' data.txt > new.txt
+mv new.txt data.txt
+cat data.txt
+awk -F, 'BEGIN{OFS=","} NR==1{print; next} {$6=int(6*1.1); print}' data.txt>new.txt
+cat new.txt
+cd ..
+ls
+mkdir mail_assign
+cd mail_assign/
+cd ..
+rm mail_assign/
+rm -f mail_assign/
+rm -r mail_assign/
+ls
+cd ~
+ssh ec2-user@13.61.182.43
+pwd
+ls
+cd terraform_tut/
+cd ..
+cd devops/
+ls
+mkdir second
+cd second/
+terraform --version
+code .
+mkdir hapi-fhir-terraform
+cd hapi-fhir-terraform/
+touch main.tf variables.tf outputs.tf deploy.sh
+code .
+terraform init
+terraform plan
+terraform apply
+terraform destroy
+terraform init
+terraform apply
+terraform init
+terraform apply
+terraform destroy
+terraform apply
+terraform destroy
+--- CPU & RAM ---
+top - 18:00:03 up  4:17,  1 user,  load average: 0.06, 0.01, 0.00
+Tasks:  43 total,   1 running,  42 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7069.4 free,    394.4 used,    348.4 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7259.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170572  10876   8060 S   0.0   0.1   0:00.88 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3088   1916   1792 S   0.0   0.0   0:00.00 init
+
