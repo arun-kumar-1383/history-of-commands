@@ -7333,3 +7333,66 @@ MiB Swap:   2048.0 total,   2047.2 free,      0.8 used.   6180.1 avail Mem
   11337 root      20   0   11.2g  52972  23296 S   6.7   0.7   0:30.04 etcd
   11351 root      20   0 1526308 282240  79104 S   6.7   3.5   0:53.14 kube-ap+
 
+=== 2025-08-25 00:00:01 ===
+docker run -it ubuntu
+docker ps -a
+ocker rm 8f0a08228710
+docker rm 8f0a08228710
+docker ps -a
+terraform
+terraform --version
+ls
+mkdir shell_scripting_practice
+cd shell_scripting_practice/
+vi temp.sh
+./temp.sh
+chmod +x temp.sh
+./temp.sh
+rm temp.sh
+ls
+vi temp.sh
+./temp.sh
+chmod +x temp.sh
+./temp.sh
+cat temp.sh 
+vi temp.sh 
+./temp.sh
+date --help
+echo "Date: $(date)"
+vi temp.sh 
+./temp.sh
+vi temp.sh 
+./temp.sh
+cat temp.sh 
+vi temp.sh 
+./temp.sh
+vi temp.sh 
+./temp.sh 
+cat
+cat temp.sh 
+vi temp.sh 
+./temp.sh 
+echo "$(2+2)"
+vi temp.sh 
+./temp.sh
+cd ~
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+minikube start
+sudo apt install -y docker.io
+minikube start
+sudo usermod -aG docker $USER
+newgrp docker
+--- CPU & RAM ---
+top - 00:00:03 up  1:26,  1 user,  load average: 0.21, 0.24, 0.20
+Tasks: 109 total,   1 running, 108 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.8 sy,  0.0 ni, 97.6 id,  0.0 wa,  0.0 hi,  0.8 si,  0.0 st
+MiB Mem :   7812.2 total,   3121.9 free,   1454.9 used,   3235.3 buff/cache
+MiB Swap:   2048.0 total,   2047.2 free,      0.8 used.   6143.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170200  10736   7920 S   0.0   0.1   0:00.95 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3936   2660   1792 S   0.0   0.0   0:03.36 init
+
