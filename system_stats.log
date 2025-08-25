@@ -7837,3 +7837,66 @@ MiB Swap:   2048.0 total,   2035.9 free,     12.1 used.   5792.0 avail Mem
       1 root      20   0  170320  11008   8064 S   0.0   0.1   0:01.58 systemd
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-sy+
 
+=== 2025-08-25 16:00:01 ===
+docker login
+docker push bigscreencontent/web-app-demo:v1
+minikube status
+minikube start
+minikube status
+kubectl create deployment my-webapp --image=bigscreencontent/web-app-demo:v1
+kubectl get deployment
+kubectl get deployments
+kubectl get pods
+kubectl get deployments
+kubectl get pods
+kubectl get deployments
+kubectl describe pod my-webapp-f5f5fb54b-9jbwm
+minikube ssh
+kubectl get deployments
+kubectl get pods
+minikube dashboard
+minikube addons enable metrics-server
+minikube dashboard
+kubectl expose deployment my-webapp type=LoadBalancer --port=3000
+kubectl expose deployment my-webapp --type=LoadBalancer --port=3000
+kubectl get service my-webapp
+kubectl delete service my-webapp
+kubectl expose deployment my-webapp --type=LoadBalancer --port=3000
+kubectl get service my-webapp
+minikube service my-webapp
+cd ..
+ls
+cd devops/
+ls
+cd second/
+ls
+mkdir hapi-fhir-with-kubernetes
+cd hapi-fhir-with-kubernetes
+eval $(minikube -p minikube docker-env)
+minikube start
+eval $(minikube -p minikube docker-env)
+git clone https://github.com/Bizacuity-Sid/hapi-fhir-deployment-server.git
+cd hapi-fhir-deployment-server
+code .
+docker build
+docker build -t hapi-fhir-k8s:latest .
+minikube stop
+minikube start
+eval $(minikube -p minikube docker-env)
+docker build -t hapi-fhir-k8s:latest .
+minikube delete
+minikube start
+eval $(minikube -p minikube docker-env)
+docker build -t hapi-fhir-k8s:latest .
+--- CPU & RAM ---
+top - 16:00:03 up  6:14,  1 user,  load average: 0.10, 0.12, 0.14
+Tasks:  90 total,   1 running,  89 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.8 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   3270.8 free,   1809.5 used,   2731.9 buff/cache
+MiB Swap:   2048.0 total,   2035.9 free,     12.1 used.   5789.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4929 root      20   0   11.2g  61992  23424 S   6.7   0.8   5:29.44 etcd
+      1 root      20   0  170320  11008   8064 S   0.0   0.1   0:01.58 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-sy+
+
