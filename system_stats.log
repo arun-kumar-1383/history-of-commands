@@ -8656,3 +8656,66 @@ MiB Swap:   2048.0 total,   2045.6 free,      2.4 used.   7084.6 avail Mem
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-sy+
       6 root      20   0    3960   2432   2048 S   0.0   0.0   0:32.14 init
 
+=== 2025-08-26 22:00:01 ===
+cd ~
+ls
+cd devops/
+ls
+cd second/
+ls
+cd ..
+rm -f second
+rm -rf second
+ls
+mkdir second
+cd second/
+minikube delete
+minikube start
+eval $(minikube -p minikube docker-env)
+git clone https://github.com/Bizacuity-Sid/hapi-fhir-deployment-server.git
+cd hapi-fhir-deployment-server
+docker build -t hapi-fhir-k8s:latest .
+code .
+docker build -t hapi-fhir-k8s:latest .
+eval $(minikube docker-env -u)
+docker pull openjdk:17-jre-slim
+cd ..
+docker pull openjdk:17-jre-slim
+cd hapi-fhir-deployment-server/
+eval $(minikube docker-env)
+docker build -t hapi-fhir-k8s:latest .
+kubectl apply -f deployment.yaml
+kubectl get deployment
+kubectl get pods
+kubectl apply -f service.yaml
+minikube service hapi-fhir-service
+ls
+cd ~
+aws configure
+aws s3 ls
+ls -a
+cd .aws/
+l
+ls
+cd credentials
+cat credentials
+cd ..
+cat config
+cd config
+cd /.aws
+cd .aws
+cat config
+cd ~
+clear
+--- CPU & RAM ---
+top - 22:00:04 up 13:23,  1 user,  load average: 0.08, 0.03, 0.01
+Tasks:  45 total,   1 running,  44 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   6792.4 free,    515.8 used,    504.0 buff/cache
+MiB Swap:   2048.0 total,   2045.6 free,      2.4 used.   7080.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 138976 arunk     20   0   10904   3712   3200 R   6.7   0.0   0:00.01 top
+      1 root      20   0  170320  11008   8064 S   0.0   0.1   0:03.22 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-sy+
+
