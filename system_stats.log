@@ -8971,3 +8971,66 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7187.5 avail Mem
       1 root      20   0  170144  11008   8192 S   0.0   0.1   0:00.53 systemd
       2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
 
+=== 2025-08-29 14:59:01 ===
+cd /.aws
+cd .aws
+cat config
+cd ~
+clear
+clear
+ls
+cd kubernetes_prac/
+ls
+cd proj1/
+ls
+cd new-app
+ls
+cd ..
+ls
+rmdir proj1
+rm -r proj1
+rm -rf proj1
+ls
+mkdir proj1
+cd proj1/
+code .
+npx create-next-app@latest .
+ls
+touch .dockerignore
+touch Dockerfile
+node --version
+docker build -t my-nextjs-app .
+docker run -d -p 3000:3000 --name my-nextjs-container my-nextjs-app
+docker stop my-nextjs-container
+docker rm my-nextjs-container
+docker login
+docker tag my-nextjs-app bigscreencontent/my-nextjs-app:latest
+docker push docker push your-docker-id/my-nextjs-app:latest/my-nextjs-app:latest
+docker push bigscreencontent/my-nextjs-app:latest
+minikube start
+kubectl config current-context
+kubectl apply -f .
+minikube service my-nextjs-service
+kubectl delete deployment my-nextjs-deployment
+kubectl delete service my-nextjs-service
+eval $(minikube -p minikube docker-env)
+docker build -t my-nextjs-app .
+cd k8s
+kubectl apply -f .
+kubectl get pods -w
+minikube service my-nextjs-service
+kubectl get pods
+kubectl delete -f .
+minikube stop
+--- CPU & RAM ---
+top - 14:59:04 up  1:21,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  45 total,   1 running,  44 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.8 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7063.6 free,    474.9 used,    273.8 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7184.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170144  11008   8192 S   0.0   0.1   0:00.58 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3936   2332   1792 S   0.0   0.0   0:03.26 init
+
